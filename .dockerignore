@@ -1,0 +1,4 @@
+*.pdf
+.git
+.gitignore
+README.md
