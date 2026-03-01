@@ -215,7 +215,8 @@ const T = {
     about: {
       headline:'Brücke zwischen Wissenschaft und Praxis',
       text:'Seit über 10 Jahren bewege ich mich an der Schnittstelle von Technologie und Strategie. Als promovierter Wirtschaftsinformatiker bringe ich wissenschaftliche Tiefe mit — als Berater die pragmatische Umsetzung. Mein Antrieb: Daten sind der Schlüssel zu besseren Entscheidungen. Ob als Consultant, Dozent oder Autor — ich mache Unternehmen fit für eine datengetriebene Zukunft.',
-      stats:[{value:10,suffix:'+',label:'Jahre Erfahrung'},{value:3,suffix:'',label:'Fachbücher & Dissertation'},{value:7,suffix:'+',label:'Wissenschaftliche Publikationen'},{value:4,suffix:'',label:'Kinder',icon:true}]
+      stats:[{value:14,suffix:'+',label:'Jahre Erfahrung'},{value:12,suffix:'+',label:'Publikationen (4 Bücher)'}],
+      projects:[{value:40,suffix:'+',label:'Strategy & Consulting (Data) Projekte'},{value:15,suffix:'+',label:'Engineering Projekte'}]
     },
     expertise: {
       headline:'Meine Kernthemen',
@@ -230,19 +231,21 @@ const T = {
     },
     pub: {
       headline:'Bücher & Wissenschaft', subline:'Wissen teilen, Wirkung erzielen.',
-      b1:{title:'Data-Driven Company',publisher:'Springer Vieweg, 2025',desc:'Moderne und integrierte Ansätze — von Data Mesh über Data Fabric bis Enterprise Architecture — um datengetrieben zu werden.',cta:'Zum Buch'},
-      b2:{title:'Your GenAI Starter Guide',publisher:'Amazon, 2024 (mit Lars Willrich)',desc:'30 praxisnahe Use Cases, ein Framework zur Priorisierung und ein Leitfaden für den Einstieg in Generative AI.',cta:'Zum Buch'},
-      b3:{title:'Participatory Multi-Criteria Decision-Making for Common Goods',publisher:'KIT Karlsruhe, 2021',desc:'Doktorarbeit über partizipative multikriterielle Entscheidungsfindung (pMCDA) im Kontext von Gemeinwohl — mit Ansätzen aus Entscheidungs- und Spieltheorie.',cta:'Zur Publikation'},
+      books:[
+        {title:'Participatory Multi-Criteria Decision-Making for Common Goods',publisher:'KIT Karlsruhe, 2021',desc:'Doktorarbeit über partizipative multikriterielle Entscheidungsfindung (pMCDA) im Kontext von Gemeinwohl — mit Ansätzen aus Entscheidungs- und Spieltheorie.',cta:'Zur Publikation',img:'images/Dissertation.png',url:'https://publikationen.bibliothek.kit.edu/1000135387'},
+        {title:'Your GenAI Starter Guide',publisher:'Amazon, 2024 (mit Lars Willrich)',desc:'30 praxisnahe Use Cases, ein Framework zur Priorisierung und ein Leitfaden für den Einstieg in Generative AI.',cta:'Zum Buch',img:'images/GenAI.jpg',url:'https://www.amazon.de/Your-GenAI-Starter-Guide-Practical/dp/B0DMN9FCC4'},
+        {title:'Data-Driven Company',publisher:'Springer Vieweg, 2025',desc:'Moderne und integrierte Ansätze — von Data Mesh über Data Fabric bis Enterprise Architecture — um datengetrieben zu werden.',cta:'Zum Buch',img:'images/Data-Driven_Company.jpg',url:'https://link.springer.com/book/10.1007/978-3-658-46741-8'},
+        {title:'Democratizing Analytics',publisher:'Apress / Springer Nature, 2026',desc:'How GenAI changes the Game — Wie Generative AI die Analytik demokratisiert und Unternehmen transformiert.',cta:'Demnächst',img:null,url:null,upcoming:true}
+      ],
       footer:'7+ wissenschaftliche Publikationen · 11 betreute Abschlussarbeiten · Interviews & Konferenzbeiträge'
     },
     teach: {
       headline:'Lehre & Forschung', subline:'Drei Säulen meiner akademischen Arbeit.',
       pillars:[
-        {title:'Lehre an der HTW Berlin',icon:'teach',desc:'Seit 2022 Dozent für Data Management an der HTW Berlin — Hochschule für Technik und Wirtschaft. Praxisnahe Lehre zu Datenarchitekturen, Governance, Data Engineering und datengetriebener Entscheidungsfindung.'},
-        {title:'Bücher & Publikationen',icon:'book',desc:'Zwei Fachbücher (Springer, Amazon), eine Dissertation am KIT und über 7 wissenschaftliche Veröffentlichungen. 11 betreute Abschlussarbeiten. Beiträge auf Konferenzen wie ECIS, WI und ICETE.'},
-        {title:'Forschungsinteressen',icon:'research',desc:'Entscheidungs- und Spieltheorie mit Methoden der Wirtschaftsinformatik. Multikriterielle Entscheidungsanalyse (MCDA), Analytischer Hierarchieprozess (AHP), partizipative Entscheidungsfindung und Effizienzsteigerung in komplexen Entscheidungsprozessen.'}
-      ],
-      extra:'Vorträge & Workshops auf Konferenzen wie ECIS, WI, ICETE und für das Bundesministerium für Bildung und Forschung.'
+        {title:'Vorträge & Lehre',icon:'teach',desc:'Seit 2022 Dozent für Data Management an der HTW Berlin — Hochschule für Technik und Wirtschaft. Praxisnahe Lehre zu Datenarchitekturen, Governance, Data Engineering und datengetriebener Entscheidungsfindung. Vorträge und Workshops auf internationalen Konferenzen (ECIS, WI, ICETE) und für das Bundesministerium für Bildung und Forschung.'},
+        {title:'Publikationen & Kommunikation',icon:'book',desc:'Vier Fachbücher (Springer, Apress, Amazon), eine Dissertation am KIT und über 7 wissenschaftliche Veröffentlichungen. 11 betreute Abschlussarbeiten. Wissenstransfer zwischen Forschung und Praxis durch Konferenzbeiträge, Interviews und Fachpublikationen.'},
+        {title:'Forschungsinteressen & -methoden',icon:'research',desc:'Fundierte Methoden an der Schnittstelle von Wirtschaftsinformatik und Entscheidungstheorie.',methods:['Entscheidungs- & Spieltheorie','MCDA / AHP','Design Science Research','Case Studies','Action Research','Qualitative Interviews','Surveys','Simulation','Data Analytics & KI','Design Thinking','Delphi-Methode']}
+      ]
     },
     proj: {
       headline:'Ausgewählte Projekte', subline:'Wirkung statt Worte.',
@@ -262,7 +265,8 @@ const T = {
     about: {
       headline:'Bridging Science and Practice',
       text:'For over 10 years, I have been working at the intersection of technology and strategy. As a PhD in Business Information Systems, I bring scientific depth — as a consultant, pragmatic execution. My drive: data is the key to better decisions. Whether as consultant, lecturer, or author — I empower organizations for a data-driven future.',
-      stats:[{value:10,suffix:'+',label:'Years Experience'},{value:3,suffix:'',label:'Books & Dissertation'},{value:7,suffix:'+',label:'Scientific Publications'},{value:4,suffix:'',label:'Children',icon:true}]
+      stats:[{value:14,suffix:'+',label:'Years Experience'},{value:12,suffix:'+',label:'Publications (4 Books)'}],
+      projects:[{value:40,suffix:'+',label:'Strategy & Consulting (Data) Projects'},{value:15,suffix:'+',label:'Engineering Projects'}]
     },
     expertise: {
       headline:'Core Expertise',
@@ -277,19 +281,21 @@ const T = {
     },
     pub: {
       headline:'Books & Science', subline:'Sharing knowledge, creating impact.',
-      b1:{title:'Data-Driven Company',publisher:'Springer Vieweg, 2025',desc:'Modern and integrated approaches — from Data Mesh to Data Fabric to Enterprise Architecture — to become data-driven.',cta:'View Book'},
-      b2:{title:'Your GenAI Starter Guide',publisher:'Amazon, 2024 (with Lars Willrich)',desc:'30 practical use cases, a prioritization framework, and a guide for getting started with Generative AI.',cta:'View Book'},
-      b3:{title:'Participatory Multi-Criteria Decision-Making for Common Goods',publisher:'KIT Karlsruhe, 2021',desc:'Doctoral thesis on participatory multi-criteria decision-making (pMCDA) in the context of common goods — combining decision and game theory approaches.',cta:'View Publication'},
+      books:[
+        {title:'Participatory Multi-Criteria Decision-Making for Common Goods',publisher:'KIT Karlsruhe, 2021',desc:'Doctoral thesis on participatory multi-criteria decision-making (pMCDA) in the context of common goods — combining decision and game theory approaches.',cta:'View Publication',img:'images/Dissertation.png',url:'https://publikationen.bibliothek.kit.edu/1000135387'},
+        {title:'Your GenAI Starter Guide',publisher:'Amazon, 2024 (with Lars Willrich)',desc:'30 practical use cases, a prioritization framework, and a guide for getting started with Generative AI.',cta:'View Book',img:'images/GenAI.jpg',url:'https://www.amazon.de/Your-GenAI-Starter-Guide-Practical/dp/B0DMN9FCC4'},
+        {title:'Data-Driven Company',publisher:'Springer Vieweg, 2025',desc:'Modern and integrated approaches — from Data Mesh to Data Fabric to Enterprise Architecture — to become data-driven.',cta:'View Book',img:'images/Data-Driven_Company.jpg',url:'https://link.springer.com/book/10.1007/978-3-658-46741-8'},
+        {title:'Democratizing Analytics',publisher:'Apress / Springer Nature, 2026',desc:'How GenAI changes the Game — How Generative AI democratizes analytics and transforms enterprises.',cta:'Coming Soon',img:null,url:null,upcoming:true}
+      ],
       footer:'7+ scientific publications · 11 supervised theses · Interviews & conference contributions'
     },
     teach: {
       headline:'Teaching & Research', subline:'Three pillars of my academic work.',
       pillars:[
-        {title:'Teaching at HTW Berlin',icon:'teach',desc:'Since 2022, lecturer for Data Management at HTW Berlin — University of Applied Sciences. Hands-on teaching on data architectures, governance, data engineering, and data-driven decision-making.'},
-        {title:'Books & Publications',icon:'book',desc:'Two books (Springer, Amazon), a doctoral thesis at KIT, and over 7 scientific publications. 11 supervised theses. Contributions at conferences such as ECIS, WI, and ICETE.'},
-        {title:'Research Interests',icon:'research',desc:'Decision and game theory using information systems methods. Multi-Criteria Decision Analysis (MCDA), Analytical Hierarchy Process (AHP), participatory decision-making, and improving efficiency in complex decision processes.'}
-      ],
-      extra:'Talks & workshops at conferences such as ECIS, WI, ICETE, and for the German Federal Ministry of Education and Research.'
+        {title:'Talks & Teaching',icon:'teach',desc:'Since 2022, lecturer for Data Management at HTW Berlin — University of Applied Sciences. Hands-on teaching on data architectures, governance, data engineering, and data-driven decision-making. Talks and workshops at international conferences (ECIS, WI, ICETE) and for the German Federal Ministry of Education and Research.'},
+        {title:'Publications & Communication',icon:'book',desc:'Four books (Springer, Apress, Amazon), a doctoral thesis at KIT, and over 7 scientific publications. 11 supervised theses. Knowledge transfer between research and practice through conference contributions, interviews, and professional publications.'},
+        {title:'Research Interests & Methods',icon:'research',desc:'Rigorous methods at the intersection of business informatics and decision theory.',methods:['Decision & Game Theory','MCDA / AHP','Design Science Research','Case Studies','Action Research','Qualitative Interviews','Surveys','Simulation','Data Analytics & AI','Design Thinking','Delphi Method']}
+      ]
     },
     proj: {
       headline:'Selected Projects', subline:'Impact over words.',
@@ -325,7 +331,7 @@ const IC = {
 const iconArr = [IC.strategy, IC.genai, IC.mdm, IC.operating, IC.transform, IC.decision];
 
 /* Animated Counter */
-function Counter({ target, suffix='', dur=2000 }) {
+function Counter({ target, suffix='', dur=4000 }) {
   const [c, setC] = useState(0);
   const ref = useRef(null);
   const started = useRef(false);
@@ -383,12 +389,6 @@ function App() {
     {id:'teaching',l:t.nav.teaching},{id:'projects',l:t.nav.projects},{id:'contact',l:t.nav.contact}
   ];
 
-  const books = [
-    {d:t.pub.b1, img:'images/Data-Driven_Company.jpg', url:'https://link.springer.com/book/10.1007/978-3-658-46741-8'},
-    {d:t.pub.b2, img:'images/GenAI.jpg', url:'https://www.amazon.de/Your-GenAI-Starter-Guide-Practical/dp/B0DMN9FCC4'},
-    {d:t.pub.b3, img:'images/Dissertation.png', url:'https://publikationen.bibliothek.kit.edu/1000135387', small:true}
-  ];
-
   const S = (tag, props, ...ch) => React.createElement(tag, props, ...ch);
 
   return S('div', {style:{background:'var(--cream)',minHeight:'100vh'}},
@@ -429,7 +429,7 @@ function App() {
         S('div', {className:'hero-text'},
           S('p', {style:{fontFamily:'var(--sans)',fontSize:'0.85rem',fontWeight:600,color:'var(--accent)',letterSpacing:'0.15em',textTransform:'uppercase',marginBottom:16}}, t.hero.tagline),
           S('h1', {style:{fontFamily:'var(--serif)',fontSize:'clamp(2.5rem, 5vw, 4.2rem)',fontWeight:700,lineHeight:1.1,color:'var(--charcoal)',marginBottom:24,letterSpacing:'-0.02em'}}, 'Dr. Sven-Erik', S('br'), 'Willrich'),
-          S('p', {style:{fontSize:'1.15rem',lineHeight:1.7,color:'var(--charcoal-light)',maxWidth:520,marginBottom:40}}, t.hero.claim),
+          S('p', {style:{fontSize:'1.15rem',lineHeight:1.7,color:'var(--charcoal-light)',maxWidth:520,marginBottom:20}}, t.hero.claim),
           S('div', {style:{display:'flex',gap:16,alignItems:'center',flexWrap:'wrap'}},
             S('a', {href:'#about',onClick:e=>{e.preventDefault();go('about')},className:'btn-primary'}, t.hero.cta, ' \u2193'),
             S('a', {href:'https://www.linkedin.com/in/sven-erik-willrich/',target:'_blank',rel:'noopener noreferrer',style:{display:'inline-flex',alignItems:'center',justifyContent:'center',width:48,height:48,borderRadius:'50%',border:'2px solid var(--charcoal)',color:'var(--charcoal)',transition:'all 0.3s',textDecoration:'none'},onMouseEnter:e=>{e.currentTarget.style.borderColor='var(--accent)';e.currentTarget.style.color='var(--accent)'},onMouseLeave:e=>{e.currentTarget.style.borderColor='var(--charcoal)';e.currentTarget.style.color='var(--charcoal)'}}, IC.linkedin)
@@ -459,19 +459,18 @@ function App() {
             )
           )
         ),
-        S('div', {className:'stats-grid',style:{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:24,marginTop:80}},
-          t.about.stats.map((s,i) =>
-            S('div', {key:i,className:'reveal stagger-'+(i+1),style:{background:'var(--cream)',borderRadius:16,padding:'32px 24px',textAlign:'center',transition:'transform 0.3s,box-shadow 0.3s'},onMouseEnter:e=>{e.currentTarget.style.transform='translateY(-4px)';e.currentTarget.style.boxShadow='0 12px 24px rgba(0,0,0,0.06)'},onMouseLeave:e=>{e.currentTarget.style.transform='';e.currentTarget.style.boxShadow=''}},
-              S('div', {style:{fontFamily:'var(--serif)',fontSize:'2.8rem',fontWeight:700,color:'var(--accent)',lineHeight:1,marginBottom:8,display:'flex',alignItems:'center',justifyContent:'center',gap:6}},
-                s.icon && IC.heart,
+        S('div', {className:'stats-grid',style:{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:20,marginTop:80}},
+          [...t.about.stats, ...t.about.projects].map((s,i) =>
+            S('div', {key:i,className:'reveal stagger-'+(i+1),style:{background:'var(--cream)',borderRadius:16,padding:'28px 16px',textAlign:'center',transition:'transform 0.3s,box-shadow 0.3s'},onMouseEnter:e=>{e.currentTarget.style.transform='translateY(-4px)';e.currentTarget.style.boxShadow='0 12px 24px rgba(0,0,0,0.06)'},onMouseLeave:e=>{e.currentTarget.style.transform='';e.currentTarget.style.boxShadow=''}},
+              S('div', {style:{fontFamily:'var(--serif)',fontSize:'2.5rem',fontWeight:700,color:'var(--accent)',lineHeight:1,marginBottom:8}},
                 S(Counter, {target:s.value,suffix:s.suffix})
               ),
-              S('div', {style:{fontSize:'0.9rem',color:'var(--warm-gray)',fontWeight:500}}, s.label)
+              S('div', {style:{fontSize:'0.82rem',color:'var(--warm-gray)',fontWeight:500,lineHeight:1.3}}, s.label)
             )
           )
         )
       ),
-      S('style', null, `@media(max-width:900px){.about-grid{grid-template-columns:1fr!important;gap:40px!important}}@media(max-width:600px){.stats-grid{grid-template-columns:1fr 1fr!important}}`)
+      S('style', null, `@media(max-width:900px){.about-grid{grid-template-columns:1fr!important;gap:40px!important}.stats-grid{grid-template-columns:1fr 1fr!important}}@media(max-width:600px){.stats-grid{grid-template-columns:1fr 1fr!important}}`)
     ),
 
     /* ═══ EXPERTISE ═══ */
@@ -498,24 +497,36 @@ function App() {
           S('h2', {style:{fontFamily:'var(--serif)',fontSize:'clamp(2rem, 3.5vw, 3rem)',fontWeight:700,color:'var(--charcoal)',marginBottom:12,letterSpacing:'-0.02em'}}, t.pub.headline),
           S('p', {style:{fontSize:'1.05rem',color:'var(--warm-gray)'}}, t.pub.subline)
         ),
-        S('div', {className:'books-grid',style:{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:36,alignItems:'start'}},
-          books.map((b,i) =>
-            S('div', {key:i,className:'reveal stagger-'+(i+1),style:{textAlign:'center'}},
-              S('div', {className:'book-card',style:{marginBottom:24,display:'flex',alignItems:'center',justifyContent:'center',height:320}},
-                S('div', {className:'book-inner',style:{borderRadius:12,overflow:'hidden',boxShadow:'8px 8px 24px rgba(0,0,0,0.12)',maxWidth:220,margin:'0 auto'}},
-                  S('img', {src:b.img,alt:b.d.title,style:{width:'100%',height:'auto',display:'block'}})
-                )
+        S('div', {className:'books-grid',style:{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:28,alignItems:'stretch'}},
+          t.pub.books.map((b,i) =>
+            S('div', {key:i,className:'reveal stagger-'+(i+1),style:{textAlign:'center',display:'flex',flexDirection:'column'}},
+              S('div', {className:'book-card',style:{marginBottom:20,display:'flex',alignItems:'center',justifyContent:'center',height:280,flexShrink:0}},
+                b.img
+                  ? S('div', {className:'book-inner',style:{borderRadius:10,overflow:'hidden',boxShadow:'8px 8px 24px rgba(0,0,0,0.12)',maxWidth:190,margin:'0 auto'}},
+                      S('img', {src:b.img,alt:b.title,style:{width:'100%',height:'auto',display:'block'}})
+                    )
+                  : S('div', {style:{width:175,height:250,borderRadius:10,background:'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',padding:'24px 16px',margin:'0 auto',boxShadow:'8px 8px 24px rgba(0,0,0,0.18), 0 0 40px rgba(42,157,143,0.08)',color:'white',textAlign:'center',position:'relative',overflow:'hidden'}},
+                      S('div', {style:{position:'absolute',top:0,left:0,right:0,background:'linear-gradient(90deg, var(--accent), #34d399)',padding:'5px 0',fontSize:'0.58rem',fontWeight:800,letterSpacing:'0.15em',textTransform:'uppercase',color:'white',textAlign:'center'}}, 'COMING 2026'),
+                      S('div', {style:{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',width:120,height:120,border:'1px solid rgba(42,157,143,0.12)',borderRadius:'50%',pointerEvents:'none'}}),
+                      S('div', {style:{fontFamily:'var(--serif)',fontSize:'1.15rem',fontWeight:700,lineHeight:1.25,marginTop:12,marginBottom:6}}, 'Democratizing Analytics'),
+                      S('div', {style:{fontSize:'0.65rem',color:'rgba(255,255,255,0.55)',lineHeight:1.4,fontStyle:'italic'}}, 'How GenAI changes the Game'),
+                      S('div', {style:{marginTop:16,fontSize:'0.58rem',color:'rgba(255,255,255,0.35)',letterSpacing:'0.08em'}}, 'Apress · Springer Nature')
+                    )
               ),
-              S('h3', {style:{fontFamily:'var(--serif)',fontSize:'1.25rem',fontWeight:700,color:'var(--charcoal)',marginBottom:6,lineHeight:1.3}}, b.d.title),
-              S('p', {style:{fontSize:'0.85rem',color:'var(--accent)',fontWeight:600,marginBottom:10}}, b.d.publisher),
-              S('p', {style:{fontSize:'0.9rem',lineHeight:1.6,color:'var(--charcoal-light)',marginBottom:16,maxWidth:320,margin:'0 auto 16px'}}, b.d.desc),
-              S('a', {href:b.url,target:'_blank',rel:'noopener noreferrer',className:'btn-outline',style:{fontSize:'0.85rem',padding:'10px 24px'}}, b.d.cta, ' \u2192')
+              S('div', {style:{flex:1,display:'flex',flexDirection:'column'}},
+                S('h3', {style:{fontFamily:'var(--serif)',fontSize:'1.05rem',fontWeight:700,color:'var(--charcoal)',marginBottom:5,lineHeight:1.3}}, b.title),
+                S('p', {style:{fontSize:'0.78rem',color:'var(--accent)',fontWeight:600,marginBottom:8}}, b.publisher),
+                S('p', {style:{fontSize:'0.82rem',lineHeight:1.6,color:'var(--charcoal-light)',flex:1,marginBottom:16}}, b.desc)
+              ),
+              b.url
+                ? S('a', {href:b.url,target:'_blank',rel:'noopener noreferrer',className:'btn-outline',style:{fontSize:'0.8rem',padding:'8px 20px',alignSelf:'center'}}, b.cta, ' \u2192')
+                : S('span', {className:'btn-outline',style:{fontSize:'0.8rem',padding:'8px 20px',alignSelf:'center',opacity:0.5,cursor:'default',borderStyle:'dashed'}}, b.cta)
             )
           )
         ),
         S('p', {className:'reveal',style:{textAlign:'center',marginTop:60,fontSize:'0.9rem',color:'var(--warm-gray)',fontStyle:'italic'}}, t.pub.footer)
       ),
-      S('style', null, `@media(max-width:900px){.books-grid{grid-template-columns:1fr!important;gap:48px!important}}`)
+      S('style', null, `@media(max-width:1000px){.books-grid{grid-template-columns:1fr 1fr!important;gap:32px!important}}@media(max-width:600px){.books-grid{grid-template-columns:1fr!important;gap:48px!important}}`)
     ),
 
     /* ═══ TEACHING ═══ */
@@ -530,11 +541,18 @@ function App() {
             S('div', {key:i,className:'expertise-card reveal stagger-'+(i+1),style:{background:'white',borderRadius:16,padding:'36px 28px',boxShadow:'0 2px 12px rgba(0,0,0,0.04)',cursor:'default'}},
               S('div', {style:{color:'var(--accent)',marginBottom:20}}, IC[p.icon]),
               S('h3', {style:{fontFamily:'var(--serif)',fontSize:'1.25rem',fontWeight:700,color:'var(--charcoal)',marginBottom:12,lineHeight:1.3}}, p.title),
-              S('p', {style:{fontSize:'0.9rem',lineHeight:1.7,color:'var(--charcoal-light)'}}, p.desc)
+              S('p', {style:{fontSize:'0.9rem',lineHeight:1.7,color:'var(--charcoal-light)',marginBottom:p.methods?16:0}}, p.desc),
+              p.methods && S('div', {style:{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'6px 16px',marginTop:4}},
+                p.methods.map((m,j) =>
+                  S('div', {key:j,style:{display:'flex',alignItems:'center',gap:8,fontSize:'0.82rem',color:'var(--charcoal-light)',lineHeight:1.5}},
+                    S('span', {style:{width:5,height:5,borderRadius:'50%',background:'var(--accent)',flexShrink:0,opacity:0.7}}),
+                    m
+                  )
+                )
+              )
             )
           )
         ),
-        S('div', {className:'reveal',style:{marginTop:48,padding:'24px 28px',background:'var(--accent-light)',borderRadius:12,borderLeft:'3px solid var(--accent)',fontSize:'0.92rem',lineHeight:1.7,color:'var(--charcoal-light)'}}, t.teach.extra)
       ),
       S('style', null, `@media(max-width:900px){.teach-grid{grid-template-columns:1fr!important}}`)
     ),
@@ -560,15 +578,18 @@ function App() {
     ),
 
     /* ═══ CONTACT ═══ */
-    S('section', {id:'contact',style:{padding:'100px 24px',background:'white'}},
+    S('section', {id:'contact',style:{padding:'100px 24px 60px',background:'white'}},
       S('div', {style:{maxWidth:800,margin:'0 auto'}},
         S('div', {className:'reveal',style:{textAlign:'center',marginBottom:48}},
           S('h2', {style:{fontFamily:'var(--serif)',fontSize:'clamp(2rem, 3.5vw, 3rem)',fontWeight:700,color:'var(--charcoal)',marginBottom:12,letterSpacing:'-0.02em'}}, t.contact.headline),
           S('p', {style:{fontSize:'1.05rem',color:'var(--warm-gray)'}}, t.contact.subline)
         ),
         S('div', {className:'reveal stagger-1',style:{display:'flex',alignItems:'center',gap:48,justifyContent:'center',flexWrap:'wrap'}},
-          S('div', {style:{borderRadius:20,overflow:'hidden',boxShadow:'0 12px 28px rgba(0,0,0,0.08)',width:180,height:180,flexShrink:0}},
-            S('img', {src:'images/Sven_2.jpg',alt:'Sven-Erik Willrich',style:{width:'100%',height:'100%',objectFit:'cover'}})
+          S('div', {style:{display:'flex',flexDirection:'column',alignItems:'center',gap:12}},
+            S('div', {style:{borderRadius:20,overflow:'hidden',boxShadow:'0 12px 28px rgba(0,0,0,0.08)',width:160,height:160,flexShrink:0}},
+              S('img', {src:'images/Sven_2.jpg',alt:'Sven-Erik Willrich',style:{width:'100%',height:'100%',objectFit:'cover'}})
+            ),
+            S('img', {src:'images/Signature.png',alt:'Signature',style:{height:36,width:'auto',opacity:0.45,filter:'brightness(0.3)'}})
           ),
           S('div', {style:{display:'flex',flexDirection:'column',gap:20}},
             S('a', {href:'mailto:mail@svenwillrich.de',style:{display:'flex',alignItems:'center',gap:14,textDecoration:'none',color:'var(--charcoal)',fontSize:'1.05rem',fontWeight:500,transition:'color 0.3s'},onMouseEnter:e=>e.currentTarget.style.color='var(--accent)',onMouseLeave:e=>e.currentTarget.style.color='var(--charcoal)'},
@@ -583,12 +604,16 @@ function App() {
     ),
 
     /* ═══ FOOTER ═══ */
-    S('footer', {style:{padding:'40px 24px',borderTop:'1px solid var(--cream-dark)',background:'var(--cream)'}},
+    S('footer', {style:{borderTop:'1px solid var(--cream-dark)',background:'var(--cream)',padding:'24px 24px'}},
       S('div', {style:{maxWidth:1200,margin:'0 auto',display:'flex',alignItems:'center',justifyContent:'space-between',flexWrap:'wrap',gap:16}},
-        S('p', {style:{fontSize:'0.85rem',color:'var(--warm-gray)'}}, t.footer.copy),
+        S('div', {style:{display:'flex',alignItems:'center',gap:12}},
+          S('p', {style:{fontFamily:'var(--serif)',fontSize:'0.9rem',fontWeight:600,color:'var(--charcoal)',letterSpacing:'-0.01em'}}, 'Dr. Sven-Erik Willrich'),
+          S('span', {style:{width:1,height:16,background:'var(--cream-dark)'}}),
+          S('p', {style:{fontSize:'0.8rem',color:'var(--warm-gray)'}}, t.footer.copy)
+        ),
         S('div', {style:{display:'flex',gap:24,alignItems:'center'}},
-          S('a', {href:'#',style:{fontSize:'0.85rem',color:'var(--warm-gray)',textDecoration:'none',transition:'color 0.3s'},onMouseEnter:e=>e.target.style.color='var(--accent)',onMouseLeave:e=>e.target.style.color='var(--warm-gray)'}, t.footer.imprint),
-          S('a', {href:'#',style:{fontSize:'0.85rem',color:'var(--warm-gray)',textDecoration:'none',transition:'color 0.3s'},onMouseEnter:e=>e.target.style.color='var(--accent)',onMouseLeave:e=>e.target.style.color='var(--warm-gray)'}, t.footer.privacy),
+          S('a', {href:'#',style:{fontSize:'0.8rem',color:'var(--warm-gray)',textDecoration:'none',transition:'color 0.3s'},onMouseEnter:e=>e.target.style.color='var(--accent)',onMouseLeave:e=>e.target.style.color='var(--warm-gray)'}, t.footer.imprint),
+          S('a', {href:'#',style:{fontSize:'0.8rem',color:'var(--warm-gray)',textDecoration:'none',transition:'color 0.3s'},onMouseEnter:e=>e.target.style.color='var(--accent)',onMouseLeave:e=>e.target.style.color='var(--warm-gray)'}, t.footer.privacy),
           S('a', {href:'https://www.linkedin.com/in/sven-erik-willrich/',target:'_blank',rel:'noopener noreferrer',style:{color:'var(--warm-gray)',transition:'color 0.3s'},onMouseEnter:e=>e.currentTarget.style.color='var(--accent)',onMouseLeave:e=>e.currentTarget.style.color='var(--warm-gray)'}, IC.linkedin)
         )
       )
